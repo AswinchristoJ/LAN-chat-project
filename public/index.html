@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>chatApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#343a40" />
+
+    <script src="cdn/jquery/jquery.min.js"></script>
+    <script src="cdn/bootstrap/popper.min.js"></script>
+    <script src="cdn/bootstrap/bootstrap.min.js"></script>
+    <script src="cdn/socket/socket.io.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="cdn/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="topNav">
+        <!-- Brand -->
+        <a class="navbar-brand" id="logo" href="#">SIET Chat-Room ;-)</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#myModal">Your Name</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="userName">Give urself a Name:</label>
+                            <!-- this feature is under developement -->
+                            <input type="text" class="form-control" id="userName" autocomplete="off">
+                        </div>
+                        <button type="submit" id="userNameBtn" class="btn btn-success">Done</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="msgBdy"></div>
+    <div class="input-group mb-3 fixed-bottom" id="typePad">
+        <input id="inputTxt" type="text" class="form-control" placeholder="Your Message..." autocomplete="off">
+        <div class="input-group-append">
+            <button id="submitBtn" class="btn btn-success" type="button">SEND</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
