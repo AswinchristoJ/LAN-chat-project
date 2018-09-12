@@ -4,6 +4,6 @@ The idea about this project is to message chat with others who are all connected
 1. Clone or download this repo  
 1.a. Install the required npm's   
 2. Then run the app.js  
-3. Make sure the system is connected to any local network  
-4. Enter the ip-address of the system that the app is running in the browser in any of the other devices which is connected to the same LAN  
+3. Make sure the system is connected to any local network(wifi)  
+4. Enter the ip-address of the system along with the port number that the app is running in the browser in any of the other devices which is connected to the same LAN  
 5. Then enjoy chatting  
