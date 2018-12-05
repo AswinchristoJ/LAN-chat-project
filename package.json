@@ -1,0 +1,28 @@
+{
+  "name": "lan-chat-project",
+  "version": "1.0.0",
+  "description": "The idea about this project is to message chat with others who are all connected to a LAN.This project was based on node js and no internet is required for this operation.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.18.7",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "chat": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogeshvar/LAN-chat-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogeshvar/LAN-chat-project/issues"
+  },
+  "homepage": "https://github.com/yogeshvar/LAN-chat-project#readme"
+}
