@@ -19,8 +19,11 @@ $(document).ready(() => {
         let data = {
             'typedText': $("#inputTxt").val()
         }
-
-        $('#inputTxt').val('')
-        socket.emit('message', data)
+        if(data.typedText === ""){
+            alert('Please leave a valid message buddy.')
+        } else {
+            $('#inputTxt').val('')
+            socket.emit('message', data)
+        }
     })
 })
