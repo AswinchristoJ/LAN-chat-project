@@ -25,7 +25,7 @@ $ npm run chat
 ### Todos
 ---
 - Write MORE AND MORE Tests
-- Start with functional Programming
+- Start with functional Programming 
 =======
 # LAN-chat-project
 The idea about this project is to message chat with others who are all connected to a LAN.This project was based on node js and no internet is required for this operation.
